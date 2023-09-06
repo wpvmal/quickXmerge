@@ -45,7 +45,7 @@ int main(int argc, char * argv[]){
     cout << "\033[H\033[2K" "Binary Search: ";
     cin >> toFind;
     binarySearch(&mergeNumbers, toFind, 0, (numbers.size() - 1), delay, 'L');
-    cout << endl;
+    cout << endl << "\033[?25h";
 
     return 0;
 }
